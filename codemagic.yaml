@@ -9,13 +9,15 @@ workflows:
       - name: Build app for iPhone
         script: |
           set -e
-          xcodebuild -project FERCHOSTER_CAR/FERCHOSTER_CAR.xcodeproj \
-            -target FERCHOSTER_CAR \
+          xcodebuild \
+            -project FERCHOSTER_CAR.xcodeproj \
+            -scheme FERCHOSTER_CAR \
             -configuration Release \
             -sdk iphoneos \
             -destination 'generic/platform=iOS' \
             -derivedDataPath build/DerivedData \
-            CODE_SIGNING_ALLOWED=NO build
+            CODE_SIGNING_ALLOWED=NO \
+            build
       - name: Package unsigned IPA for Sideloadly
         script: |
           set -e
