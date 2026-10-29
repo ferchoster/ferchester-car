@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#05070b">
+  <title>FERCHOSTER CAR</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Menú principal">
+      <div class="brand-mark">F<span>•</span></div>
+      <button class="nav-btn active" data-page="home"><b>⌂</b><span>Inicio</span></button>
+      <button class="nav-btn" data-page="maps"><b>➤</b><span>Mapas</span></button>
+      <button class="nav-btn" data-page="music"><b>♫</b><span>Música</span></button>
+      <button class="nav-btn" data-page="videos"><b>▣</b><span>Videos</span></button>
+      <button class="nav-btn" data-page="apps"><b>▦</b><span>Apps</span></button>
+      <button class="nav-btn" data-page="settings"><b>⚙</b><span>Ajustes</span></button>
+      <div class="sidebar-foot">FC <span class="online-dot"></span></div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div><div class="eyebrow">SISTEMA MULTIMEDIA PERSONAL</div><div class="top-title" id="top-title">FERCHOSTER</div></div>
+        <div class="top-status"><span class="status-pill"><i></i> SISTEMA LISTO</span><time id="clock">--:--</time></div>
+      </header>
+
+      <section class="page active" id="page-home">
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="tag">TU EXPERIENCIA · TU ESTILO</div>
+            <h1 id="hero-name">FERCHOSTER<span>.</span></h1>
+            <div class="vehicle-label" id="vehicle-label">HYUNDAI SANTA FE SPORT <strong>2017</strong></div>
+            <p>Tu centro multimedia, personalizado.</p>
+            <button class="primary-btn" data-go="apps">EXPLORAR SISTEMA <span>↗</span></button>
+          </div>
+          <div class="hero-image-wrap"><img src="assets/ferchester-hyundai-blue-concept.png" alt="Concepto visual FERCHOSTER para Hyundai azul" class="hero-image"><div class="image-shade"></div><div class="image-caption"><span>HYUNDAI SANTA FE SPORT</span><b>BLUE EDITION / 2017</b></div></div>
+          <div class="hero-glow"></div>
+        </div>
+        <div class="section-heading"><div><span class="eyebrow">ACCESOS DIRECTOS</span><h2>Tu espacio</h2></div><span class="section-line"></span></div>
+        <div class="app-grid">
+          <button class="app-card youtube-card" data-page="youtube"><span class="app-icon youtube-icon">▶</span><span class="card-title">YouTube</span><span class="card-sub">Videos en línea</span><span class="card-arrow">↗</span></button>
+          <button class="app-card" data-page="videos"><span class="app-icon">▣</span><span class="card-title">Mis videos</span><span class="card-sub">Archivos del dispositivo</span><span class="card-arrow">↗</span></button>
+          <button class="app-card" data-page="music"><span class="app-icon music-icon">♫</span><span class="card-title">Música</span><span class="card-sub">Tu biblioteca de audio</span><span class="card-arrow">↗</span></button>
+          <button class="app-card" data-page="maps"><span class="app-icon map-icon">➤</span><span class="card-title">Mapas</span><span class="card-sub">Abrir navegación</span><span class="card-arrow">↗</span></button>
+        </div>
+        <div class="bottom-note"><span class="online-dot"></span> INTERFAZ PERSONALIZADA <span class="note-separator">/</span> <span id="home-vehicle">HYUNDAI SANTA FE SPORT 2017</span></div>
+      </section>
+
+      <section class="page" id="page-youtube">
+        <div class="page-heading"><span class="eyebrow">VIDEO EN LÍNEA</span><h1>YouTube<span>.</span></h1><p>Abre YouTube o pega el enlace de un video compatible.</p></div>
+        <div class="panel youtube-panel"><div class="panel-icon youtube-icon">▶</div><div class="panel-body"><h2>Videos de YouTube</h2><p>La reproducción integrada depende de la compatibilidad del navegador y de las reglas de YouTube. Si no se puede reproducir aquí, podrás abrir el video en YouTube.</p><form id="youtube-form" class="url-form"><input id="youtube-url" type="url" placeholder="Pega aquí la URL de YouTube" aria-label="URL de YouTube"><button class="primary-btn" type="submit">ABRIR VIDEO ↗</button></form><div id="youtube-result" class="media-stage empty-stage"><span class="stage-symbol">▶</span><span>Tu video aparecerá aquí si el enlace permite reproducción integrada.</span></div><button id="open-youtube" class="secondary-btn">ABRIR YOUTUBE ↗</button></div></div>
+      </section>
+
+      <section class="page" id="page-videos">
+        <div class="page-heading"><span class="eyebrow">BIBLIOTECA LOCAL</span><h1>Mis videos<span>.</span></h1><p>Selecciona un archivo de video compatible desde el dispositivo que estés usando.</p></div>
+        <div class="panel media-panel"><div class="media-toolbar"><label class="primary-btn file-picker">＋ SELECCIONAR VIDEO<input id="video-file" type="file" accept="video/*"></label><span class="muted" id="video-filename">Ningún archivo seleccionado</span></div><video id="local-video" class="local-player" controls playsinline webkit-playsinline preload="metadata" hidden></video><div id="video-empty" class="media-stage empty-stage"><span class="stage-symbol">▣</span><strong>Tu biblioteca empieza aquí</strong><span>Selecciona un archivo de video para reproducirlo.</span></div><p class="hint">Nota: por seguridad, el navegador solo puede acceder a los archivos que selecciones manualmente. La disponibilidad en CarBridge debe comprobarse en el iPhone.</p></div>
+      </section>
+
+      <section class="page" id="page-music">
+        <div class="page-heading"><span class="eyebrow">AUDIO PERSONAL</span><h1>Música<span>.</span></h1><p>Selecciona canciones guardadas en tu dispositivo.</p></div>
+        <div class="panel media-panel"><div class="media-toolbar"><label class="primary-btn file-picker">＋ SELECCIONAR AUDIO<input id="audio-file" type="file" accept="audio/*" multiple></label><span class="muted" id="audio-count">Sin canciones cargadas</span></div><div id="track-list" class="track-list"><div class="media-stage empty-stage"><span class="stage-symbol">♫</span><strong>Tu música, a tu manera</strong><span>Selecciona uno o varios archivos de audio.</span></div></div><div class="audio-now"><div class="album-icon">♫</div><div class="audio-info"><strong id="audio-title">Nada en reproducción</strong><span>FERCHOSTER PLAYER</span></div><audio id="audio-player" controls preload="metadata"></audio></div><p class="hint">La lista solo permanece disponible mientras los archivos seleccionados sigan accesibles en esta sesión.</p></div>
+      </section>
+
+      <section class="page" id="page-maps">
+        <div class="page-heading"><span class="eyebrow">NAVEGACIÓN</span><h1>Mapas<span>.</span></h1><p>Abre un servicio de mapas para iniciar tu ruta.</p></div>
+        <div class="app-grid map-grid"><a class="app-card link-card" href="https://maps.google.com" target="_blank" rel="noopener"><span class="app-icon map-icon">➤</span><span class="card-title">Google Maps</span><span class="card-sub">Abrir mapas</span><span class="card-arrow">↗</span></a><a class="app-card link-card" href="https://www.waze.com/ul" target="_blank" rel="noopener"><span class="app-icon waze-icon">◉</span><span class="card-title">Waze</span><span class="card-sub">Abrir navegación</span><span class="card-arrow">↗</span></a></div><div class="hint-box">La navegación se abre en un servicio externo. Esta versión no lee la ubicación GPS ni muestra indicaciones en tiempo real dentro de FERCHOSTER CAR.</div>
+      </section>
+
+      <section class="page" id="page-apps">
+        <div class="page-heading"><span class="eyebrow">CENTRO DE APLICACIONES</span><h1>Aplicaciones<span>.</span></h1><p>Accesos rápidos para tu sistema multimedia.</p></div>
+        <div class="app-grid"><button class="app-card" data-page="youtube"><span class="app-icon youtube-icon">▶</span><span class="card-title">YouTube</span><span class="card-sub">Videos en línea</span><span class="card-arrow">↗</span></button><button class="app-card" data-page="videos"><span class="app-icon">▣</span><span class="card-title">Mis videos</span><span class="card-sub">Archivos locales</span><span class="card-arrow">↗</span></button><button class="app-card" data-page="music"><span class="app-icon music-icon">♫</span><span class="card-title">Música</span><span class="card-sub">Archivos de audio</span><span class="card-arrow">↗</span></button><button class="app-card" data-page="settings"><span class="app-icon">⚙</span><span class="card-title">Personalización</span><span class="card-sub">Nombre y vehículo</span><span class="card-arrow">↗</span></button></div>
+      </section>
+
+      <section class="page" id="page-settings">
+        <div class="page-heading"><span class="eyebrow">TU IDENTIDAD</span><h1>Ajustes<span>.</span></h1><p>Personaliza la pantalla principal de FERCHOSTER CAR.</p></div>
+        <form id="settings-form" class="panel settings-form"><div class="form-grid"><label>Nombre principal<input id="setting-name" maxlength="28" value="FERCHOSTER"></label><label>Marca del vehículo<input id="setting-make" maxlength="24" value="Hyundai"></label><label>Modelo<input id="setting-model" maxlength="32" value="Santa Fe Sport"></label><label>Año<input id="setting-year" type="number" min="1980" max="2035" value="2017"></label><label>Color del vehículo<select id="setting-color"><option value="Azul">Azul</option><option value="Negro">Negro</option><option value="Blanco">Blanco</option><option value="Gris">Gris</option><option value="Rojo">Rojo</option></select></label><label>Formato de hora<select id="setting-time"><option value="24">24 horas</option><option value="12">12 horas</option></select></label></div><div class="form-actions"><button class="primary-btn" type="submit">GUARDAR CAMBIOS</button><button class="secondary-btn" type="button" id="reset-settings">RESTABLECER</button></div><p id="settings-message" class="success-message" role="status"></p></form><div class="hint-box">Los cambios se guardan en el almacenamiento local del navegador. Esta pantalla no modifica el sistema original de CarPlay ni los ajustes internos de iOS.</div>
+      </section>
+
+      <footer class="footer"><span>FERCHOSTER CAR <b>●</b> CONCEPTO MULTIMEDIA</span><span>DISEÑADO PARA HYUNDAI SANTA FE SPORT 2017</span></footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

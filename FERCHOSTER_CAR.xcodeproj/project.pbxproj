@@ -1,0 +1,31 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {};
+ objectVersion = 56;
+ objects = {
+  A10000000000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+  A10000000000000000000002 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+  A10000000000000000000003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+  A10000000000000000000004 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+  A10000000000000000000005 /* FERCHOSTER_CAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FERCHOSTER_CAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+  A20000000000000000000001 /* Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000001; };
+  A20000000000000000000002 /* Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000002; };
+  A20000000000000000000003 /* www in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000004; };
+  A30000000000000000000001 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  A30000000000000000000002 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A20000000000000000000003,); runOnlyForDeploymentPostprocessing = 0; };
+  A30000000000000000000003 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A20000000000000000000001,A20000000000000000000002,); runOnlyForDeploymentPostprocessing = 0; };
+  A40000000000000000000001 /* Main Group */ = {isa = PBXGroup; children = (A40000000000000000000002,A40000000000000000000003,); sourceTree = "<group>"; };
+  A40000000000000000000002 /* FERCHOSTER_CAR */ = {isa = PBXGroup; children = (A10000000000000000000001,A10000000000000000000002,A10000000000000000000003,A10000000000000000000004,); path = FERCHOSTER_CAR; sourceTree = "<group>"; };
+  A40000000000000000000003 /* Products */ = {isa = PBXGroup; children = (A10000000000000000000005,); name = Products; sourceTree = "<group>"; };
+  A50000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = {LastUpgradeCheck = 1500; ORGANIZATIONNAME = FERCHOSTER; TargetAttributes = {A60000000000000000000001 = {CreatedOnToolsVersion = 15.0; }; }; }; buildConfigurationList = A90000000000000000000001; compatibilityVersion = "Xcode 14.0"; developmentRegion = es; hasScannedForEncodings = 0; knownRegions = (en, es, Base,); mainGroup = A40000000000000000000001; productRefGroup = A40000000000000000000003; projectDirPath = ""; projectRoot = ""; targets = (A60000000000000000000001,); };
+  A60000000000000000000001 /* FERCHOSTER_CAR */ = {isa = PBXNativeTarget; buildConfigurationList = A90000000000000000000002; buildPhases = (A30000000000000000000003,A30000000000000000000001,A30000000000000000000002,); buildRules = (); dependencies = (); name = FERCHOSTER_CAR; productName = FERCHOSTER_CAR; productReference = A10000000000000000000005; productType = "com.apple.product-type.application"; };
+  A70000000000000000000001 = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 12.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Debug; };
+  A70000000000000000000002 = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 12.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Release; };
+  A70000000000000000000003 = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGNING_ALLOWED = NO; INFOPLIST_FILE = FERCHOSTER_CAR/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = com.ferchester.car; PRODUCT_NAME = "FERCHOSTER CAR"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; IPHONEOS_DEPLOYMENT_TARGET = 12.0; GENERATE_INFOPLIST_FILE = NO; }; name = Debug; };
+  A70000000000000000000004 = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGNING_ALLOWED = NO; INFOPLIST_FILE = FERCHOSTER_CAR/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = com.ferchester.car; PRODUCT_NAME = "FERCHOSTER CAR"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; IPHONEOS_DEPLOYMENT_TARGET = 12.0; GENERATE_INFOPLIST_FILE = NO; }; name = Release; };
+  A90000000000000000000001 = {isa = XCConfigurationList; buildConfigurations = (A70000000000000000000001,A70000000000000000000002,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  A90000000000000000000002 = {isa = XCConfigurationList; buildConfigurations = (A70000000000000000000003,A70000000000000000000004,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+ };
+ rootObject = A50000000000000000000001;
+}
